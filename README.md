@@ -19,18 +19,25 @@ Las tarjetas se ofrecen de forma individual o en sobres de diferentes contenidos
 Se pide:
 
 1-Analizar la factibilidad de resolverlo mediante un algoritmo greedy
+
 2-Dar pseudocodigo y analisis de complejidad para el punto 1.
+
 3-Resolverlo mediante un algoritmo greedy. Dando su complejidad y pseudocodigo.
+
 4-Resolverlo mediante un algoritmo de programación dinámica. Dando su complejidad y pseudocódigo
+
 5-Programar los 3 algoritmos propuestos.
 
 Información adicional:
 Los programas debe recibir en un archivo de texto la cantidad de tarjetas por sobre. Una por linea
+
 El programa de factibilidad debe recibir por parametro el nombre del archivo de sobres y retornar si es factible con greedy o no. en caso de no serlo mostrar un contraejemplo.
+
 El programa greedy y de programacion dinamica debe recibir por parametro el archivo de sobres y la cantidad de tarjetas a retornar.
 
 
 Parte 2: Redes de Subterraneos.
+
 La Ciudad de buenos aires cuenta con una red de subterraneos compuesta por 6 lineas.
 Un análisis de frecuencia en hora pico ha determinado:
 
@@ -44,10 +51,15 @@ Determinar si dados estos valores es factible proporcionar un servicio adecuado.
 consideraciones:
 
 considerar que el número de personas que entra y sale sumado de todo el sistema es 0.
+
 Existe la cantidad necesaria de locomotoras para la demanda.
+
 se pueden conmutar vagones entre estaciones.
+
 Se pide:
 
 1-Analizar el problema teóricamente y explicar paso a paso como determinar la factibilidad.
+
 2-Dar pseudocódigo y análisis de complejidad.
+
 3-Programar la solución y proporcionar dos set de datos de prueba (uno factible y el otro no factible)
