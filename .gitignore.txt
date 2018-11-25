@@ -1,3 +1,5 @@
 GenerarYLeerSobres.py
 SOBRES.txt
 testin.py
+.project
+.pydevproject
