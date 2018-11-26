@@ -1,0 +1,10 @@
+Pueyrredon 60 260
+FdM 30 10
+Callao 20 10
+Tribunales 100 40
+9deJulio 150 60
+Catedral 210 200
+Uruguay 60 30
+Florida 20 10
+CarlosPelle 30 40
+NAlem 60 80
