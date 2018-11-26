@@ -1,24 +1,37 @@
+import sys
+from auxiliares import main_factibilidad
+from dinamica import dinamica
+from greedy import greedy
+
 #Recibe por parametro el nombre del archivo.
 #Retorna True o False si es factible con greedy, respectivamente.
-#En caso de ser False, imprime un contraejemplo.
-def factibilidad(nombre_del_archivo_de_sobres):
-    with open(nombre_del_archivo_de_sobres, 'r') as archivo_sobres:
-        sobres = archivo_sobres.read().splitlines()
+#En caso de ser False, muestra un contraejemplo por pantalla.
+def factibilidad(sobres):
+    if len(sobres) < 3: #Solo tiene el 1 y a lo sumo un elemento mas. Siempre se va a obtener el optimo.
+        return True
+    #Aplicamos el siguiente teorema: Sea S = (1, c2, c3, ... , cm) una base, si no es canonica , entonces el menor contraejemplo debe estar 
+    #en el rango c3+1 < x < c(m-1) + cm. (Por contrareciproca, si el menor contraejemplo no se encuentra en ese rango, entonces la base es canonica).
+    for x in range((sobres[2] + 1) + 1, sobres[len(sobres) - 2] + sobres[len(sobres) - 1]):
+        #dinamica u optima:
+        sobres = main_factibilidad(sys.argv) #Si no llamo al main en cada llamada, falla.
+        solucion_prog_dinamica = dinamica(sobres, x)
+        cantidad_de_sobres_prog_dinamica = 0
+        for tarjetas, sobres in solucion_prog_dinamica:
+            cantidad_de_sobres_prog_dinamica += sobres
+        #greedy:
+        sobres = main_factibilidad(sys.argv)
+        solucion_greedy = greedy(sobres, x)
+        cantidad_de_sobres_greedy = 0
+        for tarjetas, sobres in solucion_greedy:
+            cantidad_de_sobres_greedy += sobres
+        if cantidad_de_sobres_greedy > cantidad_de_sobres_prog_dinamica:
+            print 'No es factible obtener una solucion optima con Greedy para los sobres dados.'
+            print 'Contraejemplo =', x, 'tarjetas. Con Greedy se obtienen', cantidad_de_sobres_greedy, 'sobres mientras que la cantidad optima es', cantidad_de_sobres_prog_dinamica
+            break
+    return True
+    
+def ejecutar_factibilidad():
+    sobres = main_factibilidad(sys.argv)
+    factibilidad(sobres)
 
 
-Algorithm 1: IsCanonical
-Require: a tight coin system
-$ = h1, c2, · · · , cm, cm+1i with m >= 5
-1: if 0 < r < c2 - q with c3 = qc2 + r then
-2: return $ is non-canonical
-3: else
-4: for i = m downto 1 do
-5: for j = i downto 1 do
-6: if ci + cj > cm+1 and |GRD$(ci + cj)| > 2
-then
-7: return $ is non-canonical
-8: end if
-9: end for
-10: end for
-11: return $ is canonical
-12: end if

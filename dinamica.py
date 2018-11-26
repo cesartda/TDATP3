@@ -45,6 +45,8 @@ def ord_sol(opt, lista):
 	return sol_ord
 
 
-sobres, cant_tarj = main(sys.argv)
-solucion = dinamica(sobres, cant_tarj)
-imprimir_resultado(solucion)
+def ejecutar_prog_dinamica():
+	sobres, cant_tarj = main(sys.argv)
+	solucion = dinamica(sobres, cant_tarj)
+	imprimir_resultado(solucion)
+

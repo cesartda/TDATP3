@@ -6,6 +6,13 @@ def main(vector_parametros):
 	cant_tarj = leer_cant_tarj(vector_parametros[2])
 	return sobres,cant_tarj
 
+def main_factibilidad(vector_parametros):
+	if len(vector_parametros) != 2:
+		print("El programa debe recibir por parametro el nombre del archivo de sobres")
+		exit()
+	sobres = leer_archivo(vector_parametros[1])
+	return sobres
+
 
 def leer_archivo(nombre_archivo):
 	try:

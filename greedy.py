@@ -12,6 +12,7 @@ def greedy(lista,nro):
 	return solucion
 
 
-sobres, cant_tarj = main(sys.argv)
-solucion = greedy(sobres, cant_tarj)
-imprimir_resultado(solucion)
+def ejecutar_greedy():
+	sobres, cant_tarj = main(sys.argv)
+	solucion = greedy(sobres, cant_tarj)
+	imprimir_resultado(solucion)
