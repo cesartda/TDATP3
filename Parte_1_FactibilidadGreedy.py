@@ -3,14 +3,11 @@ from auxiliares import main_factibilidad
 from dinamica import dinamica
 from greedy import greedy
 
-#Recibe por parametro el nombre del archivo.
-#Retorna True o False si es factible con greedy, respectivamente.
-#En caso de ser False, muestra un contraejemplo por pantalla.
+
+#Retorna True o False si es factible con greedy, respectivamente. #En caso de ser False, muestra un contraejemplo por pantalla.
 def factibilidad(sobres):
     if len(sobres) < 3: #Solo tiene el 1 y a lo sumo un elemento mas. Siempre se va a obtener el optimo.
         return True
-    #Aplicamos el siguiente teorema: Sea S = (1, c2, c3, ... , cm) una base, si no es canonica , entonces el menor contraejemplo debe estar 
-    #en el rango c3+1 < x < c(m-1) + cm. (Por contrareciproca, si el menor contraejemplo no se encuentra en ese rango, entonces la base es canonica).
     for x in range((sobres[2] + 1) + 1, sobres[len(sobres) - 2] + sobres[len(sobres) - 1]):
         #dinamica u optima:
         sobres = main_factibilidad(sys.argv) #Si no llamo al main en cada llamada, falla.
