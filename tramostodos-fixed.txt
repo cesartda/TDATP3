@@ -1,0 +1,89 @@
+SanPedrito SanJoseFlores 100
+SanJoseFlores Carabobo 100
+Carabobo Puan 100
+Puan PrimeaJunta 100
+PrimeaJunta Acoyte 100
+Acoyte RioJaneiro 100
+RioJaneiro CastroBarros 100
+CastroBarros Loria 100
+Loria PlazaMiserere 100
+PlazaMiserere Alberti 100
+Alberti Pasco 100
+Pasco Congreso 100
+Congreso SaenzPeña 100
+SaenzPeña Lima 100
+Lima Piedras 100
+Piedras Peru 100
+Peru PlazaMayo 100
+LeandroAlem Florida 100
+Florida Pellegrini 100
+Pellegrini Uruguay 100
+Uruguay Callao 100
+Callao Pasteur 100
+Pasteur PueyrredonLIneaB 100
+PueyrredonLIneaB CarlosGardel 100
+CarlosGardel Medrano 100
+Medrano AngelGallarado 100
+AngelGallarado Malabia 100
+Malabia Tronador 100
+Tronador Incas 100
+Incas Echeverria 100
+Echeverria JMRosas 100
+Retiro SanMartin 100
+SanMartin Lavalle 100
+Lavalle DiagonalNorte 100
+DiagonalNorte AvenidaMayo 100
+AvenidaMayo Moreno 100
+Moreno INdependencia 100
+INdependencia SanJuan 100
+SanJuan Constitucion 100
+CongresoTucuman Juramento 100
+Juramento JoseHernandez 100
+JoseHernandez Olleros 100
+Olleros MinistroCarranza 100
+MinistroCarranza Palermo 100
+Palermo PlazaItalia 100
+PlazaItalia ScalabriniOrtiz 100
+ScalabriniOrtiz Bulnes 100
+Bulnes Aguero 100
+Aguero Pueyrredon 100
+Pueyrredon FacultadMedicina 100
+FacultadMedicina Callao 100
+Callao Tribunales 100
+Tribunales 9deJulio 100
+9deJulio Catedral 100
+PlazaVirreyes Varela 100
+Varela MedallaMilagrosa 100
+MedallaMilagrosa EmilioMitre 100
+EmilioMitre JMMoreno 100
+JMMoreno LaPlata 100
+LaPlata Boedo 100
+Boedo GralUrquiza 100
+GralUrquiza JUjuy 100
+JUjuy Pichincha 100
+Pichincha EntreRios 100
+EntreRios SanJose 100
+SanJose IndependenciaLineaE 100
+IndependenciaLineaE Belgrano 100
+Belgrano Bolivar 100
+Derecho LasHeras 100
+LasHeras SantaFe 100
+SantaFe Cordoba 100
+Cordoba Corrientes 100
+Corrientes Once 100
+Once Venezuela 100
+Venezuela HumbertoPrimo 100
+HumbertoPrimo Inclan 100
+Inclan Caseros 100
+Caseros PPatricios 100
+PPatricios Hospitales 100
+Pueyrredon Pueyrredon
+9deJulio Pellegrini
+9deJulio DiagonalNorte
+PueyrredonLIneaB Corrientes
+Lima AvenidaMayo
+Once PlazaMiserere
+Peru Catedral
+Peru Bolivar
+INdependencia IndependenciaLineaE
+HumbertoPrimo JUjuy
